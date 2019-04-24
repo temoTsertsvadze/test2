@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+</head>
+<body>
+<table width="50%" border="2px" >
+<tr>
+<th>მონაცემები</th></tr>
+<tr>
+<td>სტუდენტის სახელი:&nbsp; <?php echo  $_POST['studentName'];?></td>
+</tr>
+<tr>
+<td>გვარი:&nbsp; <?php echo $_POST['lastName'];?></td>
+</tr>
+<tr>
+<td>კურსი: &nbsp; <?php  echo (int) $_POST['course'];?></td>
+
+</tr>
+<tr>
+<td>სემესტრი &nbsp; <?php echo (int)  $_POST['semestr'];?></td>
+
+</tr>
+<tr>
+<td>სასწავლო კურსი: &nbsp; <?php echo  $_POST['study'];?></td>
+
+</tr>
+<td>მიღებული ნიშანი: &nbsp; <?php 
+$grade = $_POST['grades'];
+if($grade>=90){
+echo "A-ფრიადი,";
+
+
+
+}
+else if($grade>=80){
+echo "B-ძალიან კარგი";
+        
+        
+        
+}
+else if($grade>=70){
+echo "C-არაუშავს";
+            
+            
+            
+}
+else if($grade>=51){
+echo "D-ძლივს გადარჩი";
+           
+           
+           
+}
+else{
+echo "ჩაიჭერი";
+        
+        
+}
+?></td>
+
+</tr>
+<tr>
+<td>ლექტორის სახელი: &nbsp; <?php echo  $_POST['lectorName'];?></td>
+
+</tr>
+<td>გვარი: &nbsp; <?php echo  $_POST['lectorLastName'];?></td>
+
+</tr>
+<td>დეკანის სახელი: &nbsp; <?php echo  $_POST['decanName'];?></td>
+
+</tr>
+<td>დეკანის გვარი: &nbsp; <?php echo  $_POST['decanLastName'];?></td>
+
+</tr>
+</table>
+</body>
+</html>

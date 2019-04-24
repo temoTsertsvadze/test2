@@ -1,0 +1,98 @@
+body{
+
+	color: gray;
+	margin-left: 250px;
+	font-family: BPG ExtraSquare Mtavruli;
+
+}
+ul{
+	
+	padding: 0px;
+	list-style: none;
+	width: 100%;
+
+}
+.profilMenu{
+	width: 100%;
+	background-color: white;
+}
+.mainMenu{
+	width: 100%;
+	background-color: black;
+
+}
+ul li{
+
+	float: left;
+	width: 200px;
+	height: 60px;
+	background-color: rgb(27, 27, 27);
+	font-size: 15px;
+	text-align: center;
+	line-height: 60px;
+}
+
+ul li a{
+	text-decoration: none;
+	color:white;
+	display: block;
+}
+
+ul li a:hover{
+	background-color: #ff3434;
+}
+
+ul li ul li{
+	display: none;
+}
+
+ul li:hover ul li{
+	display: block;
+	position: relative;
+    z-index: 10;
+}
+
+
+form.example input[type=text] {
+  margin-left: 455px;
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+.popular{
+	width: 400px;
+	float: right; 
+	margin-right: 65px;
+}
+.popularHeading{
+	background-color: dimgrey;
+	width: 400px;
+	height: 60px;
+	font-size: 15px;
+	text-align: center;
+	line-height: 60px;
+	color: #f1f1f1;
+}
+.news{
+	float: left;
+}
+.news p{
+	width: 40%;
+}
+img{
+	float: left;
+	
+	margin-right: 14px;
+}
+
+.popStatiebi{
+	float: right;
+
+}
+
+.example{
+
+}
